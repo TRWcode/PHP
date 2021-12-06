@@ -1,34 +1,21 @@
 <?php
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title> PHP</title>
-    <style>
-        body {
-            text-align: center;
-        }
 
-        .rood {
-            border: red solid 5px;
-        }
 
-        .groen {
-            border: green solid 5px;
-        }
-    </style>
-</head>
-<body>
-<?php
+echo "<h1> Hier begint de while loop </h1>";
+echo "<p>bij een while loop weet je nog niet hoevaak je wil herhalen</p>";
 
-for ($i = 1 ; $i <=10 ; $i++) {
-    if ($i %2 == 0) {
-        $class = "class='rood'";
-        } else  {
-        $class = "class='groen'";
-    }
-    echo "<img ".$class. "src= 'img/actiefoto".$i.".jpg'>";
+$x = 35;
+
+while ($x >= 25) {
+    echo "hoppelepee <br>" ;
+    $x--;
 }
-?>
-</body
-</html>
+
+
+echo "<h1> hier de for loop</h1> ";
+echo  "<p> Bij een for loop weet je al hoevaak je wilt herhalen </p> ";
+
+for ($i = 35 ; $i >= 25 ; $i--) {
+    echo "hoppelepee <br>";
+}
+

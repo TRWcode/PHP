@@ -1,17 +1,37 @@
 <?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> PHP</title>
+    <style>
+        body {
+            text-align: center;
+        }
 
-$leeftijd = 23;
-$bedrag = 10;
-if($leeftijd > 65) {
-    $bedrag = $bedrag * 0.5;
+        .rood {
+            border: red solid 5px;
+        }
+
+        .groen {
+            border: green solid 5px;
+        }
+    </style>
+</head>
+<body>
+<?php
+
+for ($i = 1 ; $i <=10 ; $i++) {
+    if ($i %2 == 0) {
+        $class = "class='rood'";
+        } else  {
+        $class = "class='groen'";
+    }
+
+    // $borderColor = ($i %2 ==0) ? "red" : "green";
+
+    echo "<img ".$class. "src= 'img/actiefoto".$i.".jpg'>";
 }
-
-if ($leeftijd <= 12) {
-    $bedrag = $bedrag * 0.5;
-}
-
-if ($leeftijd < 3) {
-    $bedrag = 0;
-}
-
-echo $bedrag;
+?>
+</body
+</html>
