@@ -21,12 +21,12 @@
 <table>
 <?php
 $servername = "localhost";
-$dbname = "phpschool";
-$username = "root";
-$password = "";
+$dbname = "id18037367_phpschool";
+$username = "id18037367_root";
+$password = "B4O(W5+}T!IFZoT#";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=phpschool", $username, $password);
+    $conn = new PDO("mysql:host={$servername};dbname={$dbname}", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
